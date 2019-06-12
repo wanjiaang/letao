@@ -1,0 +1,138 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+img,
+div,
+form,
+input {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 13px;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #666;
+}
+ul {
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+}
+.clearFix::before,
+.clearFix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+.lt-header {
+  background-color: #069;
+}
+.lt-header h1 {
+  color: #fff;
+}
+.lt-header a {
+  color: #fff;
+}
+/*乐淘底部*/
+.lt-footer {
+  background-color: #069;
+}
+.lt-footer > .mui-tab-item {
+  color: #fff;
+}
+.lt-footer > .mui-tab-item.mui-active {
+  color: darkorange;
+}
+.mui-content {
+  margin-bottom: 50px;
+  background-color: #fff;
+  /*导航区*/
+  /*品牌块*/
+  /*产品区*/
+}
+.mui-content .nav-link {
+  padding: 10px;
+}
+.mui-content .nav-link > ul {
+  width: 100%;
+}
+.mui-content .nav-link > ul > li {
+  width: 33.333%;
+  float: left;
+}
+.mui-content .nav-link > ul > li img {
+  display: block;
+  width: 100%;
+}
+.mui-content .brand {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.mui-content .brand > img {
+  width: 100%;
+  display: block;
+}
+.mui-content .brand > ul {
+  overflow: hidden;
+}
+.mui-content .brand > ul > li {
+  width: 25%;
+  float: left;
+}
+.mui-content .brand > ul > li a {
+  display: block;
+}
+.mui-content .brand > ul > li a img {
+  width: 100%;
+  display: block;
+}
+.mui-content .product {
+  width: 100%;
+}
+.mui-content .product > img {
+  width: 100%;
+  margin: 10px 0;
+}
+.mui-content .product > ul > li {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.mui-content .product > ul > li a {
+  padding: 0 5px;
+  display: block;
+  box-shadow: 0 0 5px #ccc;
+}
+.mui-content .product > ul > li a img {
+  width: 100%;
+}
+.mui-content .product > ul > li a span {
+  line-height: 18px;
+  display: block;
+  color: #8f8f94;
+  text-align: center;
+  padding: 6px;
+  height: 44px;
+  overflow: hidden;
+}
