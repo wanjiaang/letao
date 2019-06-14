@@ -1,0 +1,124 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+img,
+div,
+form,
+input {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 13px;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #666;
+}
+ul {
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+}
+.clearFix::before,
+.clearFix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+.lt-header {
+  background-color: #069;
+}
+.lt-header h1 {
+  color: #fff;
+}
+.lt-header a {
+  color: #fff;
+}
+/*乐淘底部*/
+.lt-footer {
+  background-color: #069;
+}
+.lt-footer > .mui-tab-item {
+  color: #fff;
+}
+.lt-footer > .mui-tab-item.mui-active {
+  color: darkorange;
+}
+.categroyContainer {
+  position: absolute;
+  top: 44px;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+}
+.categroyContainer .cLeft {
+  height: 100%;
+  width: 80px;
+  position: relative;
+}
+.categroyContainer .cLeft ul {
+  width: 100%;
+  font-size: 14px;
+}
+.categroyContainer .cLeft ul li {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #FFF;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.categroyContainer .cLeft ul li a {
+  display: block;
+  width: 100%;
+  color: #333;
+}
+.categroyContainer .cLeft ul li.active {
+  border-right: none;
+}
+.categroyContainer .cLeft ul li.active a {
+  color: red;
+}
+.categroyContainer .cRight {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.categroyContainer .cRight ul {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.categroyContainer .cRight ul li {
+  float: left;
+  width: 33.333%;
+}
+.categroyContainer .cRight ul li a {
+  display: block;
+  text-align: center;
+}
+.categroyContainer .cRight ul li a img {
+  width: 90%;
+  margin: 0 auto;
+}

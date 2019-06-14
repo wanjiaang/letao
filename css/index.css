@@ -123,11 +123,12 @@ input {
   padding: 0 5px;
   display: block;
   box-shadow: 0 0 5px #ccc;
+  overflow: hidden;
 }
-.mui-content .product > ul > li a img {
+.mui-content .product > ul > li a > img {
   width: 100%;
 }
-.mui-content .product > ul > li a span {
+.mui-content .product > ul > li a > span {
   line-height: 18px;
   display: block;
   color: #8f8f94;
@@ -135,4 +136,23 @@ input {
   padding: 6px;
   height: 44px;
   overflow: hidden;
+}
+.mui-content .product > ul > li a > p {
+  font-size: 12px;
+  text-align: center;
+}
+.mui-content .product > ul > li a > p > span {
+  color: #f30;
+  margin-right: 3px;
+}
+.mui-content .product > ul > li a > p > del {
+  color: #ccc;
+}
+.mui-content .product > ul > li a > button {
+  margin: 0 auto;
+  display: block;
+  background-color: #069;
+  color: #fff;
+  border: none;
+  margin-bottom: 10px;
 }

@@ -54,7 +54,7 @@
     }
 
     /*产品区*/
-    .product {
+    .product{
         width: 100%;
 
         >img {
@@ -72,12 +72,12 @@
                     padding   : 0 5px;
                     display   : block;
                     box-shadow: 0 0 5px #ccc;
-
-                    img {
+                    overflow: hidden;
+                    >img {
                         width: 100%;
                     }
 
-                    span {
+                    >span {
                         line-height: 18px;
                         display    : block;
                         color      : #8f8f94;
@@ -85,6 +85,28 @@
                         padding    : 6px;
                         height     : 44px;
                         overflow   : hidden;
+                    }
+
+                    >p {
+                        font-size : 12px;
+                        text-align: center;
+
+                        >span {
+                            color       : #f30;
+                            margin-right: 3px;
+                        }
+
+                        >del {
+                            color: #ccc;
+                        }
+                    }
+                    >button{
+                        margin:0 auto;
+                        display: block;
+                        background-color: #069;
+                        color: #fff;
+                        border: none;
+                        margin-bottom: 10px;
                     }
                 }
             }
