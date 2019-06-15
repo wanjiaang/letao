@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/mui/css/icons-extra.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="./js/user.js"></script>
+    <style>
+        .mui-table-view>.logOut {
+            text-align: center;
+        }
+
+        .mui-content>.mui-table-view:first-child {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav lt-header">
+        <h1 id="title" class="mui-title">会员中心</h1>
+        <a href="javascript:;" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <a href="./search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <div class="mui-content">
+        <ul class="mui-table-view" id="ul">
+
+        </ul>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">修改密码</a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">我的购物车</a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">收货地址管理</a>
+            </li>
+        </ul>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell logOut" id="logOut">
+                <span>退出登录</span>
+            </li>
+        </ul>
+    </div>
+    <nav class="mui-bar mui-bar-tab lt-footer">
+        <a id="defaultTab" class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="categroy.html">
+            <span class="mui-icon mui-icon-list"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="shopping.html">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="user.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <script src="./assets/mui/js/mui.min.js"></script>
+
+    <script src="./js/public.js"></script>
+
+</body>
+
+</html>
