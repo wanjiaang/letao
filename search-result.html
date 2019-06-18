@@ -22,14 +22,14 @@
             <div class="mui-row">
                 <ul class="mui-col-sm-8">
                     <li class="mui-table-view-cell" id="price">
-                        <a class="mui-icon mui-icon-arrowdown">
+                        <a href="javascript:;" class="mui-icon mui-icon-arrowdown">
                             价格
                         </a>
                     </li>
                 </ul>
                 <ul class="mui-col-sm-6">
                     <li class="mui-table-view-cell" id="sales">
-                        <a class="mui-icon mui-icon-arrowdown">
+                        <a href="javascript:;" class="mui-icon mui-icon-arrowdown">
                             销量
                         </a>
                     </li>
@@ -68,7 +68,7 @@
     <script type="text/template" id="searchResult">
         {{each data}}
         <li>
-            <a href="javascript:;">
+            <a href="detail.html?id={{$value.id}}">
                 <img src="{{$value.pic[0].picAddr}}" alt="">
                 <span>{{$value.proName}}</span>
                 <p>

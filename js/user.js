@@ -42,5 +42,11 @@ $(function () {
             }
         })
     })
+
+    $("#confirm").on("click",function(){
+        console.log(111);
+        
+        location.assign("./confirem.html")
+    })
     $("#ul").html(html)
 })

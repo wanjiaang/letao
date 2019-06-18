@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/mui/css/icons-extra.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav lt-header">
+        <h1 id="title" class="mui-title">商品详情</h1>
+        <a href="javascript:;" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    </header>
+    <div class="mui-content">
+        <div class="productBox"></div>
+
+        <!-- 数量 -->
+        <div class="num">
+            <span>数量</span>
+            <div class="mui-numbox" data-numbox-min='1'>
+                <!-- "-"按钮，点击可减小当前数值 -->
+                <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                <input class="mui-numbox-input" type="number" />
+                <!-- "+"按钮，点击可增大当前数值 -->
+                <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+            </div>
+            剩余件数:
+            <span>44件</span>
+        </div>
+        <!-- 按钮 -->
+        <div class="btn">
+            <a href="javascript:;">查看购物车</a>
+            <span>加入购物车</span>
+        </div>
+    </div>
+    <nav class="mui-bar mui-bar-tab lt-footer">
+        <a id="defaultTab" class="mui-tab-item" href="tab-webview-subpage-about.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="tab-webview-subpage-chat.html">
+            <span class="mui-icon mui-icon-list"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="tab-webview-subpage-contact.html">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="tab-webview-subpage-setting.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <script src="./assets/mui/js/mui.min.js"></script>
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="./js/detail.js"></script>
+    <script src="./assets/artTemplate/template-web.js"></script>
+    <script type="text/template" id="productTpl">
+        <!-- 商品图片 -->
+        <div class="mui-slider">
+                <div class="mui-slider-group">
+                    {{each pic}}
+                    <div class="mui-slider-item">
+                        <img src="{{$value.picAddr}}" />
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            <!-- 商品详情 -->
+            <div class="title">
+                {{proName}}
+            </div>
+            <!-- 商品价格 -->
+            <div class="money">
+                价格:
+                <span class="new">${{price}}</span>
+                <del class="old">${{oldPrice}}</del>
+            </div>
+            <!-- 尺码 -->
+        <div class="size">
+                尺码:
+                <% var size = size.split("-") %>
+                <% for(var i = size[0];i<=size[1];i++){ %>
+                    <span><%= i%></span>
+               <% } %>
+            </div>
+    </script>
+</body>
+
+</html>
